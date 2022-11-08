@@ -1,0 +1,109 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Roboto Mono',monospace;
+  min-height: 400px;
+  background-color: rgb(61, 146, 161);
+  text-align: center;
+  background-size: 100vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+input[id=valor]{
+  margin: 5px;
+  padding: 6px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h1{
+  color: #ffffff;
+  font-size: 2.5em;
+  margin: 10px 3px;
+}
+
+p{
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+.form-group{
+  color: white;
+}
+
+button {
+  margin: 30px auto 50px auto;
+  padding: 4px 50px;
+  border-radius: 5px;
+}
+
+h2{
+  margin: auto auto 30px auto;
+  padding: 30px;
+  /* background-color: rgb(15, 15, 32); */
+  color: white;
+}
+
+h4{
+  color: white;
+}
+
+.img-moedas{
+  display: flex;
+	width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  --cor-neon: gold;
+  animation: neon .7s alternate infinite ease-in-out;
+}
+
+footer{
+  margin: 100px auto 10px auto;
+  font-size: 14px;
+  text-align: center;
+  color: #cfcece;
+  opacity: 0.6;
+  transition: opacity 300ms;
+}
+
+footer a{
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+footer:hover{
+  opacity: 1;
+}
+
+/* #piscando{
+  transition-duration: 1.5s;
+} */
+
+p::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+@keyframes neon{
+  from{
+    filter: drop-shadow(0 0 0 var(--cor-neon));
+  }
+  to{
+    filter: drop-shadow(0 0 20px var(--cor-neon));
+  }
+}

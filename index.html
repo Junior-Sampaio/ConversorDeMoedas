@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">Conversor de moedas</h1>
+    <p class="page-subtitle">Descubra os valores convertidos</p><br><br>
+    <label for="moeda">Insira o valor em reais R$</label><br>
+  <input type="text" id="valor" name ="valorReal" size="40" onkeypress="return onlynumber()" maxlength="7" min='1' max='9999999999' value='' placeholder="R$ 0,00"/><br>
+  </div>
+
+  <div class="form-group" id="moedas">
+    <input type="radio" id='dolar' name="moedaEstrangeira" class="input radio" value='Dólar'/>
+    <label for="dolar">Dólar</label>
+    <input type="radio" id='euro' name="moedaEstrangeira" class="input radio" value='Euro'/>
+    <label for="euro">Euro</label>
+    <input type="radio" id='bitcoin' name="moedaEstrangeira" class="input radio" value='Bitcoin'/>
+    <label for="bitcoin">Bitcoin</label>
+    <input type="radio" id='libra' name="moedaEstrangeira" class="input radio" value='Libra'/>
+    <label for="libra">Libra</label>
+    <input type="radio" id='iene' name="moedaEstrangeira" class="input radio" value='Iene'/>
+    <label for="iene">Iene</label>
+  </div>
+
+  <button id="botao" type="submit" onclick="Converter()" name="botaoConverter" disabled="disabled">Converter</button>
+
+  <h2 id="valorConvertido"></h2>
+  <div class="img-moedas">
+    <article>
+      <img src=imgs/real.png title="Real">
+      <img src=imgs/dolar.png title="Dólar">
+      <img src=imgs/euro.png title="Euro">
+      <img src=imgs/bitcoin.png title="Bitcoin">
+      <img src=imgs/libra.png title="Libra">
+      <img src=imgs/iene.png title="Iene">
+      </article>
+    </div>
+
+  <footer>Desenvolvido por <a href="https://www.linkedin.com/in/j%C3%BAnior-sampaio-b31442247/" target="_blank">Júnior Sampaio</a></footer>
+
+<script src='main.js'></script>
+
+</body>
+</html>
